@@ -16,14 +16,14 @@ const content = [
     }
 ]
 export const Tabs = () => {
-    const {tabNumber, buttonClickHandler}=useTabs(0)
+    const {currentTab, buttonClickHandler}=useTabs(0, content)
 
     return (
         <>
             {content.map((section, sectionIndex) => (
                 <button onClick={()=>buttonClickHandler(sectionIndex)}>{section.tab}</button>
             ))}
-            <div>{content[tabNumber].content}</div>
+            <div>{currentTab.content}</div>
         </>
     )
 }
