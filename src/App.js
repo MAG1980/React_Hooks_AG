@@ -8,6 +8,7 @@ import {useInput} from "./hooks/useInput";
 import {useTitle} from "./hooks/useTitle";
 import {ClickedTitle} from "./components/ClickedTitle";
 import {HoveredTitle} from "./components/HoveredTitle";
+import {Confirm} from "./components/Confirm";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -43,6 +44,7 @@ function App() {
                 </div>
                 <ClickedTitle/>
                 <HoveredTitle/>
+                <Confirm/>
             </header>
         </div>
     );
