@@ -7,6 +7,7 @@ import {Tabs} from "./components/Tabs"
 import {useInput} from "./hooks/useInput";
 import {useTitle} from "./hooks/useTitle";
 import {ClickedTitle} from "./components/ClickedTitle";
+import {HoveredTitle} from "./components/HoveredTitle";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -41,6 +42,7 @@ function App() {
                     <button onClick={()=>titleUpdater(name)}>Обновить Title</button>
                 </div>
                 <ClickedTitle/>
+                <HoveredTitle/>
             </header>
         </div>
     );

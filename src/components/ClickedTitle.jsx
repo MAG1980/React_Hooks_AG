@@ -11,7 +11,7 @@ export const ClickedTitle = () => {
         console.log('Hello, world!')
     }
 
-    const clickedTitle = useClick(sayHello);
+    const clickedTitle = useClick(sayHello)
 
     return (
         <>
