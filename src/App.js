@@ -5,9 +5,12 @@ import {CounterClass} from "./components/CounterClass";
 import {Input} from "./components/Input";
 import {Tabs} from "./components/Tabs"
 import {useInput} from "./hooks/useInput";
+import {useTitle} from "./hooks/useTitle";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
+
+    const titleUpdater = useTitle('Загрузка...')
 
     return (
         <div className="App">
@@ -32,6 +35,9 @@ function App() {
                 </div>
                 <div>
                     <Tabs/>
+                </div>
+                <div>
+                    <button onClick={()=>titleUpdater(name)}>Обновить Title</button>
                 </div>
             </header>
         </div>
