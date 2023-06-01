@@ -12,6 +12,7 @@ import {Confirm} from "./components/Confirm";
 import {PreventLeave} from "./components/PreventLeave";
 import {BeforeLeave} from "./components/BeforeLeave";
 import {FadeIn} from "./components/FadeIn";
+import {UseNetworkExample} from "./components/UseNetworkExample";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -51,7 +52,7 @@ function App() {
                 <PreventLeave/>
                 <BeforeLeave/>
                 <FadeIn/>
-
+                <UseNetworkExample/>
             </header>
         </div>
     );
