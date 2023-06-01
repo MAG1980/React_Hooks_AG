@@ -1,4 +1,3 @@
-import {useState} from "react";
 import {useTabs} from "../hooks/useTabs";
 
 const content = [
@@ -21,7 +20,7 @@ export const Tabs = () => {
     return (
         <>
             {content.map((section, sectionIndex) => (
-                <button onClick={()=>buttonClickHandler(sectionIndex)}>{section.tab}</button>
+                <button key={section.tab} onClick={() => buttonClickHandler(sectionIndex)}>{section.tab}</button>
             ))}
             <div>{currentTab.content}</div>
         </>
