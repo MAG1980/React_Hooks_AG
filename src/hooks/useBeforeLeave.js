@@ -5,10 +5,11 @@ import {useEffect} from "react";
  * @param onBefore function вызывается при уходе курсора мыши со страницы
  */
 export function useBeforeLeave(onBefore) {
-    if (typeof onBefore !== 'function') {
-        return;
-    }
+    // console.log("useBeforeLeave", onBefore)
     const mouseLeaveHandler = (event) => {
+        if(typeof onBefore !== 'function'){
+            console.log("Not a function!")
+            return}
         if (event.clientY <= 0) {
             onBefore()
             console.log("Покидаем сайт")
