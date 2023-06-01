@@ -13,6 +13,7 @@ import {PreventLeave} from "./components/PreventLeave";
 import {BeforeLeave} from "./components/BeforeLeave";
 import {FadeIn} from "./components/FadeIn";
 import {UseNetworkExample} from "./components/UseNetworkExample";
+import {UseScrollExample} from "./components/UseScrollExample";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -20,7 +21,7 @@ function App() {
     const titleUpdater = useTitle('Загрузка...')
 
     return (
-        <div className="App">
+        <div className="App" style={{height: "200vh"}}>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo"/>
                 <p>
@@ -53,6 +54,7 @@ function App() {
                 <BeforeLeave/>
                 <FadeIn/>
                 <UseNetworkExample/>
+                <UseScrollExample/>
             </header>
         </div>
     );
