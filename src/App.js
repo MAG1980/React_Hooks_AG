@@ -11,6 +11,7 @@ import {HoveredTitle} from "./components/HoveredTitle";
 import {Confirm} from "./components/Confirm";
 import {PreventLeave} from "./components/PreventLeave";
 import {BeforeLeave} from "./components/BeforeLeave";
+import {FadeIn} from "./components/FadeIn";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -49,6 +50,7 @@ function App() {
                 <Confirm/>
                 <PreventLeave/>
                 <BeforeLeave/>
+                <FadeIn/>
             </header>
         </div>
     );
