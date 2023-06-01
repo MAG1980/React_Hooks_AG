@@ -2,8 +2,8 @@ import {useFadeIn} from "../hooks/useFadeIn";
 
 export const FadeIn = () => {
     // const {elementWithFadeIn, style} = useFadeIn()
-    const h3WithFadeIn = useFadeIn()
-    const pWithFadeIn = useFadeIn()
+    const h3WithFadeIn = useFadeIn(7, 2)
+    const pWithFadeIn = useFadeIn(5)
     return (
         <>
             {/*<h3 ref={ref} style={style}>Fade In</h3>*/}

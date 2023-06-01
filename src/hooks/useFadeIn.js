@@ -1,6 +1,9 @@
 import {useEffect, useRef} from "react";
 
-export function useFadeIn() {
+export function useFadeIn(duration = 3, delay = 0) {
+    if (typeof duration !== 'number') {
+        return
+    }
     const element = useRef()
     console.log(element)
 
@@ -10,7 +13,7 @@ export function useFadeIn() {
         if (element.current) {
             //element.current получит ссылку на DOM-элемент только после монтирования компонента
             console.log(element.current)
-            element.current.style.transition = 'opacity 3s'
+            element.current.style.transition = `opacity ${duration}s ease-in-out ${delay}s`
             element.current.style.opacity = 1
         }
     });
