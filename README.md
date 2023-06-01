@@ -122,3 +122,14 @@ incrementItem = () => {
 
 window.scrollY - положение прокрутки по оси y
 window.addEventListener('scroll', onScroll) - прослушивание события прокрутки
+
+requestFullscreen() - метод DOM-элементов, который разворачивает их во весь экран.
+ref.current.requestFullscreen() 
+DOMelement.requestFullscreen() 
+
+exitFullScreen() - метод для выхода из полноэкранного режима
+document.exitFullScreen()
+
+В разных браузерах функции requestFullscreen и exitFullScreen могут иметь различные префиксы:
+moz, webkit, ms,
+поэтому желательно перед вызовом этих функций проверять их на существование.
