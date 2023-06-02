@@ -16,6 +16,7 @@ import {UseNetworkExample} from "./components/UseNetworkExample";
 import {UseScrollExample} from "./components/UseScrollExample";
 import {UseFullScreenExample} from "./components/UseFullScreenExample";
 import {Notification} from "./components/Notification";
+import {UseAxiosExample} from "./components/UseAxiosExample";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -61,6 +62,7 @@ function App() {
                 {/*<UseScrollExample/>*/}
                 <UseFullScreenExample/>
                 <Notification/>
+                <UseAxiosExample/>
             </header>
         </div>
     );
