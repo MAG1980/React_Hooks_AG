@@ -15,6 +15,7 @@ import {FadeIn} from "./components/FadeIn";
 import {UseNetworkExample} from "./components/UseNetworkExample";
 import {UseScrollExample} from "./components/UseScrollExample";
 import {UseFullScreenExample} from "./components/UseFullScreenExample";
+import {Notification} from "./components/Notification";
 
 function App() {
     const {value: name, onChange} = useInput('InitialName')
@@ -59,6 +60,7 @@ function App() {
                 <UseNetworkExample/>
                 {/*<UseScrollExample/>*/}
                 <UseFullScreenExample/>
+                <Notification/>
             </header>
         </div>
     );
